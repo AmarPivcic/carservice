@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gabarito', cursive;
+}
+
+body{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+a:visited, a:hover, a:focus, a:hover, a:active {text-decoration: none; color:white}
+
+.nav{
+    width: 100%;
+    background-color: #0E2954;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hero{
+    background: black;
+}
+
+.heroimage{
+    background-image: url("./images/servis.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50%;
+    background-size: cover;
+    opacity: 0.5;
+    height: 100vh;
+}
+
+.title{
+    position: relative;
+    top: 430px;
+    text-align: center;
+    color: white;
+    z-index: 1;
+    font-size: 32pt;
+}
+
+.subtitle{
+    position: absolute;
+    color: white;
+    text-align: center;
+    top: 480px;
+    z-index: 1;
+    font-size: 28pt;
+    width: 100%;
+}
+
+.navbutton{
+    padding: 5px;
+}
+
+.navbutton:hover{
+    border-radius: 12px;
+    color: white;
+    background-color: #0E2954;
+    box-shadow: 0 0 30px 5px #48abe0;
+    border: 1px solid white;
+}
+
+.aboutus{
+    height: 600px;
+    background-color: rgb(25,25,25);
+}
+
+.aboutustitle{
+    color: white;
+    text-align: center;
+    padding-top: 80px;
+    text-shadow: 1px 0px 8px white;
+}
+
+.aboutuscontent{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.aboutuscard{
+    width: 70%;
+    background-color: rgb(45,45,45);
+    height: 300px;
+    border-radius: 20px;
+    color: white;
+    margin-top: 50px;
+    display: flex;
+}
+
+#cardparagraph{
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 30px;
+    text-align:center;
+}
+
+.services{
+    background-color: rgb(25,25,25);
+    height: 450px;
+}
+
+.servicestitle{
+    color: white;
+    text-align: center;
+    text-shadow: 1px 0px 8px white;
+}
+
+.servicescontent{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+
+.servicescard{
+    background-color: rgb(45,45,45);
+    height: 350px;
+    width: 400px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#engine{
+    width: 100px;
+}
+
+#gearbox{
+    width: 80px;
+    padding-top: 20px;
+}
+
+#car{
+    width: 80px;
+    padding-top: 20px;
+}
+
+.cardtitle{
+    color: white;
+    font-size: 15pt;
+    padding-top: 10px;
+}
+
+#enginetext{
+    color: white;
+    padding-top: 20px;
+    padding-left:20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+#gearboxtext{
+    color: white;
+    padding-top: 20px;
+    padding-left:20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+#othertext{
+    color: white;
+    padding-top: 20px;
+    padding-left:20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.location{
+    background-color: rgb(25,25,25);
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.locationtitle{
+    color: white;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    text-shadow: 1px 0px 8px white;
+}
+
+#maps{
+    border-radius: 20px;
+}
+
+.locationcontent{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(45,45,45);
+    width: 40%;
+    border-radius: 20px;
+    height: 490px;
+}
+
+
+#locationtext{
+    color: white;
+    padding-top: 10px;
+}
+
+.footer{
+    background-color: #0E2954;
+    height: 80px;
+    width: 100%;
+    margin: 0;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-top: 15px;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer li a {
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+footer svg:hover{
+    padding: 2px;
+    transition: 1s;
+}
+
