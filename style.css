@@ -1,31 +1,51 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Gabarito', cursive;
 }
 
-body{
+body {
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     display: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
 }
 
 
-a:visited, a:hover, a:focus, a:hover, a:active {text-decoration: none; color:white}
-
-.nav{
+a:visited,
+a:hover,
+a:focus,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: white
+}
+#button{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: #0E2954;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 12pt;
+}
+#button:hover{
+    cursor: pointer;
+}
+.nav {
     width: 100%;
     background-color: #0E2954;
     height: 75px;
@@ -38,11 +58,20 @@ a:visited, a:hover, a:focus, a:hover, a:active {text-decoration: none; color:whi
     align-items: center;
 }
 
-.hero{
-    background: black;
+.logoicon{
+    scale: 1.5;
 }
 
-.heroimage{
+#logoicon{
+    scale: 1.8;
+}
+
+.hero {
+    background: black;
+    position: relative;
+}
+
+.heroimage {
     background-image: url("./images/servis.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -52,16 +81,17 @@ a:visited, a:hover, a:focus, a:hover, a:active {text-decoration: none; color:whi
     height: 100vh;
 }
 
-.title{
-    position: relative;
+.title {
+    position: absolute;
     top: 430px;
     text-align: center;
     color: white;
     z-index: 1;
     font-size: 32pt;
+    width: 100%;
 }
 
-.subtitle{
+.subtitle {
     position: absolute;
     color: white;
     text-align: center;
@@ -71,73 +101,83 @@ a:visited, a:hover, a:focus, a:hover, a:active {text-decoration: none; color:whi
     width: 100%;
 }
 
-.navbutton{
-    padding: 5px;
+.navbutton {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
 }
 
-.navbutton:hover{
-    border-radius: 12px;
+.navbutton:hover {
     color: white;
     background-color: #0E2954;
-    box-shadow: 0 0 30px 5px #48abe0;
-    border: 1px solid white;
+    box-shadow: 0 0 10px white;
+    transition: 0.3s;
 }
 
-.aboutus{
-    height: 600px;
-    background-color: rgb(25,25,25);
+.aboutus {
+    padding-top: 80px;
+    background-color: rgb(25, 25, 25);
 }
 
-.aboutustitle{
+.aboutustitle {
     color: white;
     text-align: center;
-    padding-top: 80px;
-    text-shadow: 1px 0px 8px white;
+    text-shadow: 0px 0px 8px white;
+    font-size: 22pt;
 }
 
-.aboutuscontent{
+.aboutuscontent {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-
-.aboutuscard{
-    width: 70%;
-    background-color: rgb(45,45,45);
+#image{
     height: 300px;
+    width: auto;
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
+    object-fit: cover;
+}
+
+.aboutuscard {
+    width: 70%;
+    background-color: rgb(45, 45, 45);
     border-radius: 20px;
     color: white;
     margin-top: 50px;
     display: flex;
 }
 
-#cardparagraph{
+#cardparagraph {
     margin-right: 10px;
     margin-left: 10px;
     margin-top: 30px;
-    text-align:center;
+    text-align: center;
 }
 
-.services{
-    background-color: rgb(25,25,25);
-    height: 450px;
+.services {
+    background-color: rgb(25, 25, 25);
+    padding-top: 80px;
 }
 
-.servicestitle{
+.servicestitle {
     color: white;
     text-align: center;
-    text-shadow: 1px 0px 8px white;
+    text-shadow: 0px 0px 8px white;
+    font-size: 22pt;
 }
 
-.servicescontent{
+.servicescontent {
     display: flex;
     justify-content: space-evenly;
     padding-top: 50px;
 }
 
-.servicescard{
-    background-color: rgb(45,45,45);
+.servicescard {
+    background-color: rgb(45, 45, 45);
     height: 350px;
     width: 400px;
     border-radius: 20px;
@@ -146,99 +186,93 @@ a:visited, a:hover, a:focus, a:hover, a:active {text-decoration: none; color:whi
     align-items: center;
 }
 
-#engine{
+#engine {
     width: 100px;
 }
 
-#gearbox{
+#gearbox {
     width: 80px;
     padding-top: 20px;
 }
 
-#car{
+#car {
     width: 80px;
     padding-top: 20px;
 }
 
-.cardtitle{
+.cardtitle {
     color: white;
     font-size: 15pt;
     padding-top: 10px;
 }
 
-#enginetext{
+#enginetext {
     color: white;
     padding-top: 20px;
-    padding-left:20px;
+    padding-left: 20px;
     padding-right: 20px;
     text-align: center;
 }
 
-#gearboxtext{
+#gearboxtext {
     color: white;
     padding-top: 20px;
-    padding-left:20px;
+    padding-left: 20px;
     padding-right: 20px;
     text-align: center;
 }
 
-#othertext{
+#othertext {
     color: white;
     padding-top: 20px;
-    padding-left:20px;
+    padding-left: 20px;
     padding-right: 20px;
     text-align: center;
 }
 
-.location{
-    background-color: rgb(25,25,25);
-    height: 700px;
+.location {
+    background-color: rgb(25, 25, 25);
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.locationtitle{
-    color: white;
-    text-align: center;
     padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.locationtitle {
+    color: white;
+    text-align: center;
     padding-bottom: 40px;
-    text-shadow: 1px 0px 8px white;
+    text-shadow: 0px 0px 8px white;
+    font-size: 22pt;
 }
 
-#maps{
+#maps {
     border-radius: 20px;
 }
 
-.locationcontent{
-    padding-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(45,45,45);
-    width: 40%;
-    border-radius: 20px;
-    height: 490px;
+.locationcontent {
+    text-align: center;
 }
 
 
-#locationtext{
+#locationtext {
     color: white;
     padding-top: 10px;
 }
 
-.footer{
-    background-color: #0E2954;
-    height: 80px;
-    width: 100%;
+footer {
     margin: 0;
+    background: #0E2954;
+    width: 100%;
+    height: 60px;
 }
 
-footer ul{
+footer ul {
     display: flex;
     justify-content: center;
-    margin: 0;
     padding-top: 15px;
+    margin: 0;
 }
 
 footer li {
@@ -252,8 +286,101 @@ footer li a {
     padding-right: 15px;
 }
 
-footer svg:hover{
-    padding: 2px;
-    transition: 1s;
+footer svg {
+    transition: transform .4s;
+    margin: 0 auto;
 }
 
+footer svg:hover {
+    transform: scale(1.5);
+    fill: rgb(190,190,190);
+}
+
+.darksection{
+    background-color: white;
+}
+
+.darkcard{
+    background-color: rgb(220, 220, 220);
+}
+
+.darktext{
+    color: black;
+}
+
+
+@media (max-width:1250px)
+{
+    .logoicon{
+        scale: 1;
+    }
+
+    .aboutuscard {
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+
+    #image{
+        height: 300px; 
+        border-top-left-radius:20px;
+        border-top-right-radius:20px;
+        border-bottom-left-radius:0px;
+    }
+
+    .servicescontent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servicescard{
+        margin-bottom: 30px;
+    }
+
+    #maps{
+        width: 100%;
+    }
+}
+
+@media (max-width:730px)
+{
+    .logoicon{
+        display: none;
+    }
+}
+
+@media (max-width:576px)
+{
+
+    .navbutton {
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 10pt;
+    }
+
+    .title { 
+        top: 300px;
+        font-size: 28pt;
+    }
+    
+    .subtitle {
+        top: 390px;
+        font-size: 24pt;
+    }
+
+    #image{
+        height: 200px;
+    }
+
+    .servicescard {
+        width: 300px; 
+    }
+
+    .enginecard{
+        height: 420px;
+    }
+
+    #maps{
+        width: 90%;
+    }
+
+}
