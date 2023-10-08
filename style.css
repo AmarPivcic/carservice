@@ -107,12 +107,11 @@ a:active {
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 20px;
+    color: rgb(190,190,190);
 }
 
 .navbutton:hover {
     color: white;
-    background-color: #0E2954;
-    box-shadow: 0 0 10px white;
     transition: 0.3s;
 }
 
@@ -186,27 +185,30 @@ a:active {
     align-items: center;
 }
 
-#engine {
+.engine {
     width: 100px;
+    filter: invert(100%);
 }
 
-#gearbox {
+.gearbox {
     width: 80px;
     padding-top: 20px;
+    filter: invert(100%);
 }
 
-#car {
+.car {
     width: 80px;
     padding-top: 20px;
+    filter: invert(100%);
 }
 
-.cardtitle {
+.enginetitle {
     color: white;
     font-size: 15pt;
     padding-top: 10px;
 }
 
-#enginetext {
+.enginetext {
     color: white;
     padding-top: 20px;
     padding-left: 20px;
@@ -214,7 +216,14 @@ a:active {
     text-align: center;
 }
 
-#gearboxtext {
+.gearboxtitle {
+    color: white;
+    font-size: 15pt;
+    padding-top: 10px;
+}
+
+
+.gearboxtext {
     color: white;
     padding-top: 20px;
     padding-left: 20px;
@@ -222,7 +231,14 @@ a:active {
     text-align: center;
 }
 
-#othertext {
+.othertitle {
+    color: white;
+    font-size: 15pt;
+    padding-top: 10px;
+}
+
+
+.othertext {
     color: white;
     padding-top: 20px;
     padding-left: 20px;
@@ -256,7 +272,7 @@ a:active {
 }
 
 
-#locationtext {
+.locationtext {
     color: white;
     padding-top: 10px;
 }
@@ -306,6 +322,10 @@ footer svg:hover {
 
 .darktext{
     color: black;
+}
+
+.invert{
+    filter: invert(0%);
 }
 
 
@@ -381,6 +401,10 @@ footer svg:hover {
 
     #maps{
         width: 90%;
+    }
+
+    footer{
+        position: absolute;
     }
 
 }
