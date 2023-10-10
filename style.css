@@ -123,8 +123,7 @@ a:active {
 .aboutustitle {
     color: white;
     text-align: center;
-    text-shadow: 0px 0px 8px white;
-    font-size: 22pt;
+    font-size: 24pt;
 }
 
 .aboutuscontent {
@@ -133,16 +132,8 @@ a:active {
     justify-content: center;
 }
 
-#image{
-    height: 300px;
-    width: auto;
-    border-top-left-radius:20px;
-    border-bottom-left-radius:20px;
-    object-fit: cover;
-}
-
 .aboutuscard {
-    width: 70%;
+    width: 60%;
     background-color: rgb(45, 45, 45);
     border-radius: 20px;
     color: white;
@@ -154,6 +145,7 @@ a:active {
     margin-right: 10px;
     margin-left: 10px;
     margin-top: 30px;
+    margin-bottom: 30px;
     text-align: center;
 }
 
@@ -164,9 +156,8 @@ a:active {
 
 .servicestitle {
     color: white;
-    text-align: center;
-    text-shadow: 0px 0px 8px white;
-    font-size: 22pt;
+    text-align: center;;
+    font-size: 24pt;
 }
 
 .servicescontent {
@@ -259,8 +250,7 @@ a:active {
     color: white;
     text-align: center;
     padding-bottom: 40px;
-    text-shadow: 0px 0px 8px white;
-    font-size: 22pt;
+    font-size: 24pt;
 }
 
 #maps {
