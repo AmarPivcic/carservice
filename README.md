@@ -17,8 +17,8 @@ Also, you can download this project and edit it if you want with simple steps:
 1. Open Git CMD or CommandLine on your computer
 2. Change directory with cd command to the directory where you want to clone this project
 3. Clone the repository with git clone command:
-
-	`git clone https://github.com/AmarPivcic/carservice`
+	```sh
+	git clone https://github.com/AmarPivcic/carservice
 
 ## Contact
 
